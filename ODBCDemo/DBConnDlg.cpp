@@ -13,9 +13,9 @@ IMPLEMENT_DYNAMIC(CDBConnDlg, CDialogEx)
 
 CDBConnDlg::CDBConnDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DBCONN_DIALOG, pParent)
-	, m_strDSN(_T("wangdsn2"))
+	, m_strDSN(_T("WPQ"))
 	, m_strDatabase(_T("test"))
-	, m_strUser(_T("wang"))
+	, m_strUser(_T("Niki"))
 	, m_strPassword(_T("123123"))
 {
 

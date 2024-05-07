@@ -24,7 +24,7 @@ protected:
 
 public:
 	//SQLDB::MySQLClass *m_pSQLConnector;
-	ODBCClass* m_pDB;
+	ODBCClass* m_pDB = NULL;
 
 public:
 	CString m_strDSN;

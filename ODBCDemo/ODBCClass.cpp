@@ -3,16 +3,6 @@
 #include <codecvt>
 
 
-#define DISPLAY_MAX 50          // Arbitrary limit on column width to display
-#define DISPLAY_FORMAT_EXTRA 3  // Per column extra display bytes (| <data> )
-#define DISPLAY_FORMAT      L"%c %*.*s "
-#define DISPLAY_FORMAT_C    L"%c %-*.*s "
-#define NULL_SIZE           6   // <NULL>
-#define SQL_QUERY_SIZE      1000 // Max. Num characters for SQL Query passed in.
-#define PIPE                L'|'
-
-void HandleDiagnosticRecord(SQLHANDLE hHandle, SQLSMALLINT hType, RETCODE RetCode);
-
 std::wstring convert_to_wstring(const std::string& str) {
     std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
     return converter.from_bytes(str);
